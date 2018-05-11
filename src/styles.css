@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+#5C6174 - dark blue
+#E8E7E3 - dark gray
+#F0EFEC - medium gray
+#F4F4F2 - white
+*/
+
+body {
+  background: #5c6174;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}

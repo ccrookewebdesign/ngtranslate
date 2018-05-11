@@ -1,0 +1,104 @@
+/*
+#5C6174 - dark blue
+#E8E7E3 - dark gray
+#F0EFEC - medium gray
+#F4F4F2 - white
+*/
+
+h4 {
+  color: #5c6174;
+}
+
+div.content {
+  max-width: 800px;
+  width: 100%;
+  margin: 25px auto;
+  padding: 12px;
+  background: #e8e7e3;
+}
+
+.translatorform-container {
+}
+
+.results-container {
+  margin-top: 20px;
+}
+
+.translateform {
+  width: 100%;
+  border: none;
+  background: #f4f4f2;
+  resize: none;
+  margin-bottom: none;
+  padding: 5px;
+}
+
+.translatorform-buttons {
+  /*background: #f0efec;*/
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+i {
+  font-size: 1.5em;
+  cursor: pointer;
+  padding-right: 8px;
+  color: #5c6174;
+}
+
+button {
+  background: #5c6174;
+  border: none;
+  color: #f4f4f2;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.text-to-display {
+  background: #f0efec;
+  margin-bottom: 12px;
+  padding: 8px;
+  min-height: 24px;
+}
+
+.translated-text {
+  background: #f4f4f2;
+  padding: 8px;
+  min-height: 24px;
+}
+
+@media screen and (max-width: 900px) {
+  body,
+  h5,
+  h4,
+  h3,
+  h2,
+  h1,
+  p {
+    color: #f4f4f2;
+  }
+
+  div.content {
+    background: transparent;
+  }
+
+  button {
+    background: #f4f4f2;
+    color: #5c6174;
+  }
+
+  i {
+    color: #f4f4f2;
+  }
+}

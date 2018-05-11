@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="content">
+      <h3>English to Spanish Translator</h3>
+      <p>View it on your laptop to use the microphone feature!</p>
+      <div class="translatorform-container">
+        <form #translator="ngForm" (ngSubmit)="send()">
+          <div class="">
+            <textarea class="translateform" name="spanish" placeholder="Text to translate to Spanish" minlength="5" rows="5" required
+              (ngModelChange)="updateText($event)" [(ngModel)]="textToTranslate">
+            </textarea>
+          </div>
+          <div class="d-flex translatorform-buttons">
+            <div class="mr-auto p-2 pl0">
+              <voice-recorder *ngIf="!isMobileDevice()" [textToTranslate]="textToTranslate" (onSpeechFound)="handleSpeechFound($event)"></voice-recorder>
+              <i (click)="onClear()" class="fa fa-times fa-1x"></i>
+            </div>
+            <div class="p-2 pr0">
+              <button type="submit" id="btnSubmit" class="d-flex justify-content-end">Translate</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="results-container" *ngIf="textToDisplay">
+        <h5>Your Translation</h5>
+        <div class="text-to-display">
+          {{ textToDisplay }}
+        </div>
+        <div class="translated-text" *ngIf="translatedText">
+          {{ translatedText }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

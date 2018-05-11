@@ -1,0 +1,28 @@
+i {
+  font-size: 1.5em;
+  cursor: pointer;
+  padding-right: 8px;
+  color: #5c6174;
+}
+
+i.isrecording {
+  color: #acb1bf;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pl0 {
+  padding-left: 0 !important;
+}
+
+@media screen and (max-width: 900px) {
+  i {
+    color: #f4f4f2;
+  }
+
+  i.isrecording {
+    color: #daf7a6;
+  }
+}
